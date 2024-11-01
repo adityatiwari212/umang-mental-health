@@ -1,0 +1,144 @@
+/* AnxietyTest.css */
+
+.AnxietyTest-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 20px;
+    background: rgb(180,214,205);
+background: linear-gradient(45deg, rgb(192, 208, 204) 20%, rgb(252, 238, 199) 40%, rgb(255, 205, 213) 70%, rgb(251, 183, 206) 100%);
+    border-radius: 10px;
+    background-size: 200% 200%;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation: gradientBackground 25s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.greeting {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.greeting h1{
+    text-align: left;
+    font-size: 3.5em;
+}
+.intro {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.intro p{
+    text-align: left;
+    font-size: 2em;
+    color: #001e23;
+}
+
+.question-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.question {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.question p{
+    font-size: 1.9em;
+    color: rgb(14, 1, 50);
+}
+.options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #4caf50;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.options input[type="radio"]:checked {
+    background-color: #4caf50;
+}
+
+.next-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #45a049;
+}
+
+.warning {
+    margin-top: 20px;
+    
+}
+.warning p{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result {
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.result p {
+    font-size: 18px;
+    color: #555;
+}
+.button-container-right-end{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.button-container-right-end button{
+    width: auto;
+}

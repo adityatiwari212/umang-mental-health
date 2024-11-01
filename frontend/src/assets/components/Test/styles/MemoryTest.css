@@ -1,0 +1,149 @@
+/* styles.css (or your preferred stylesheet) */
+
+/* styles.css */
+._memTest-description {
+  
+  margin-bottom: 20px;
+  
+}
+
+._memTest-description p {
+  font-size: 1.0em;
+  text-align: center;
+  text-decoration: none;
+}
+
+._memTest-start-button {
+  background-color: #28a745; /* Green color for start button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+._memTest-start-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+  transform: translateY(-2px);
+}
+
+._memTest-start-button:focus {
+  outline: none;
+}
+._memTest-header {
+    max-width: 75%;
+    max-height: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  ._memTest-header h1 {
+    font-size: 2.0em;
+    position: relative;
+    display: inline-block;
+  }
+  
+  ._memTest-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* Your accent color */
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  ._memTest-header h1:hover::after {
+    transform: scaleX(1);
+  }
+  
+  ._memTest-words-container {
+    margin-bottom: 20px;
+  }
+  
+  ._memTest-words-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ._memTest-words-list li {
+    margin-bottom: 5px;
+  }
+  
+  ._memTest-recall-container {
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  ._memTest-recall-items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
+  
+  ._memTest-recall-item {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  ._memTest-recall-item label {
+    cursor: pointer;
+  }
+  
+  ._memTest-recall-submit {
+    margin-top: 10px;
+  }
+  
+  ._memTest-score-container {
+    text-align: center;
+  }
+  
+  ._memTest-countdown {
+    text-align: center;
+    margin-top: 20px;
+  }
+  ._memTest-recall-submit {
+    margin-top: 20px;
+    background-color: #007bff; /* Your accent color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, transform 0.2s ease;
+  }
+  
+  ._memTest-recall-submit:hover {
+    background-color: #0056b3; /* Darker shade of your accent color */
+    transform: translateY(-2px);
+  }
+  
+  ._memTest-recall-submit:focus {
+    outline: none;
+  }
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    ._memTest-recall-item {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    ._memTest-recall-item {
+      width: 100%;
+    }
+  }
+  

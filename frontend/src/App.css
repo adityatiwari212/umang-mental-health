@@ -1,0 +1,9 @@
+#root{
+    padding: 0px 1px;
+}
+p{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}

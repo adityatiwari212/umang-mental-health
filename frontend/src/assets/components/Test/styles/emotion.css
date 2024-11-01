@@ -1,0 +1,71 @@
+._emo_recg-emotion-recognition {
+  text-align: center;
+  margin: 20px;
+}
+
+._emo_recg-emotion-recognition h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+._emo_recg-emotion-recognition h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+._emo_recg-emotion-recognition p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-decoration: none;
+}
+
+._emo_recg-emotion-select {
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 0;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  outline: none;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+._emo_recg-emotion-select:focus {
+  border-color: #21a1f1;
+}
+._emo_recg-description{
+  margin-bottom: 20px;
+}
+._emo_recg-description p{
+  font-size: 1.0em;
+  text-align: center;
+  text-decoration: none;
+}
+._emo_recg-emotion-submit {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+._emo_recg-emotion-submit:hover {
+  background-color: #21a1f1;
+}
+
+._emo_recg-emotion-feedback {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #ffffff;
+}

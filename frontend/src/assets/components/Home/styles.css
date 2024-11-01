@@ -1,0 +1,59 @@
+
+
+
+.mySwiper{
+    width: 50%;
+    display: inline;
+}
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+
+}
+
+
+.slider-box-container{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    height: 350px;
+
+}
+.review{
+    height: 70%;
+}
+.photo-name-location-container{
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo{
+    border: 1px white solid;
+    width: fit-content;
+    max-width: 35%;
+    height: 100%;
+}
+.photo img{
+    border-radius: 50%;
+    height: 100px;
+
+}
+.name-location-container{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

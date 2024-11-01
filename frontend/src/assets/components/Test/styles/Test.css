@@ -1,0 +1,137 @@
+/* styles/Test.css */
+
+*{
+  text-decoration: none;
+}
+@keyframes diagonalMove {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  animation: diagonalMove 10s infinite linear;
+  background-size: 200% 200%;
+  /* color: white; */
+}
+
+.App-header {
+  text-align: center;
+}
+
+.timer_time {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(217, 251, 194); /* Replace with your desired background color */
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  border-radius: 50%; /* Makes the div circular */
+  text-align: center;
+  font-size: 60px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TrailMakingTest_tmt.css
+.trail-container_tmt {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  background-color: #444;
+  margin: 20px 0;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.circle_tmt {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.circle_tmt:hover {
+  background-color: #61dafb;
+  color: black;
+  transform: scale(1.1);
+}
+
+.button_submit_tmt {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button_submit_tmt:hover {
+  background-color: #21a1f1;
+}
+
+.score_tmt {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #61dafb;
+}
+
+.trail_making_test_tmt {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ */
+
+
+/* emotion recogn */
+/* styles/Test.css */
+
+
+
+.score_tmt {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+canvas {
+  border: red solid .5px;
+  border-radius: 50%;
+}

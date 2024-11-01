@@ -1,0 +1,114 @@
+@keyframes diagonalMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.line-for-left, .line-for-right {
+    position: absolute;
+    top: 0;
+    border-left: 5px solid rgb(227, 0, 0);
+    height: 100%;
+}
+
+.line-for-left {
+    left: 55%;
+}
+
+.line-for-right {
+    right: 55%;
+}
+
+form {
+    background-color: rgb(233, 233, 183);
+    width: 100%;
+}
+
+.Username, .password {
+    font-size: calc(100% + 10px);
+    text-align: left;
+    text-transform: capitalize;
+    margin: 20px;
+    padding-top: 25px;
+}
+
+input {
+    max-width: calc(100% - 15px);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 4px;
+    height: 35px;
+}
+
+p {
+    color: rgb(214, 138, 138);
+    text-align: start;
+    text-decoration: red underline solid;
+    font-weight: 600;
+}
+
+button {
+    width: 90%;
+    text-align: center;
+    
+}
+
+.half-left {
+    max-width: 55%;
+    width: 90%;
+    height: 100%;
+    margin-top: 25%;
+    margin-left: 15%;
+    padding: 0;
+}
+
+.half-right {
+    width: 45%;
+    height: 100%;
+    margin-top: 25%;
+    margin-left: 25%;
+    padding: 0;
+}
+
+a {
+    font-size: larger;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(4, 109, 221);
+    border: 3px solid black;
+    border-radius: 1px;
+    padding: 1px 5px 3px;
+}
+
+input[type="submit"] {
+    margin: 5px 25%;
+    border-radius: 7px;
+    width: 50%;
+}
+
+.container-left {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+    height: 100%;
+    margin: 0;
+    width: 54%; /* Occupies almost the entire left part of the screen */
+    position: absolute;
+    animation: diagonalMove 10s infinite linear;
+    background-size: 200% 200%;
+}
+
+.container-right {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb, #d4fc79, #96e6a1);
+    height: 100%;
+    margin: 0;
+    width: 54%; /* Occupies almost the entire right part of the screen */
+    position: absolute;
+    left: 46%;
+    animation: diagonalMove 10s infinite linear;
+    background-size: 200% 200%;
+}

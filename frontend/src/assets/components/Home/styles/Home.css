@@ -1,0 +1,87 @@
+.main-home-container {
+  background-color:rgb(253, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+.take-test {
+  padding: 100px;
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: rgb(244, 219, 217);
+background: linear-gradient(90deg, rgb(250, 241, 241) 0%, rgb(248, 240, 241) 23%, rgb(248, 240, 244) 50%, rgb(245, 237, 246) 100%);
+
+}
+@media(max-width:1000px){
+  .take-test{
+    flex-wrap: wrap;
+  }
+}
+.take-test-image {
+  width: 45%;
+}
+
+.take-test-image img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.take-test-intro {
+  width: 55%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.take-test-intro p {
+  margin-bottom: 20px;
+  font-size: 2.2em;
+  text-decoration: none;
+  color: black;
+}
+
+.button-take-test {
+  text-align: center;
+}
+
+.button-take-test .button-test {
+  background-color: #137216;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button-take-test .button-test:hover {
+  background-color: #45a049;
+}
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  
+  box-shadow: 1px 2px 3px 10px rgb(255, 237, 237);
+}
+
+@media (max-width: 768px) {
+  .take-test-image, .take-test-intro {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  }
+}
+
