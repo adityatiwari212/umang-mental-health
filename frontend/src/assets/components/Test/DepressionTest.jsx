@@ -3,6 +3,7 @@ import axios from 'axios'; // Import axios
 import { DepressionQuestions } from '../../../constants';
 import "./styles/AnxietyTest.css";
 import "./styles/button-50.css";
+import api from '../../../api';
 
 function DepressionTest() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -35,7 +36,7 @@ function DepressionTest() {
 
     const sendResponsesToBackend = async (ansArr) => {
         try {
-            const response = await axios.post('/api/depression-test', { responses: ansArr }); // Update with your backend endpoint
+            const response = await api.post('/api/umang2/predict/anxiety', { input: ansArr }); // Update with your backend endpoint
             setResult(response.data.result); // Assuming the backend sends back a result
         } catch (error) {
             console.error('Error sending data to backend:', error);

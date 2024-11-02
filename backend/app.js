@@ -36,9 +36,12 @@ const user  = require("./routes/userRoute")
 const doctor = require("./routes/doctorRoutes")
 const testimonial = require("./routes/testimonialRouter")
 const qna = require("./routes/qnaRoutes")
+const predict = require("./routes/predictRoutes");
 app.use("/api/umang2/blog" , blog);
 app.use("/api/umang2/user" , user)
 app.use("/api/umang2/doctors" , doctor)
 app.use("/api/umang2/testimonial" , testimonial)
 app.use("/api/umang2/qna" , qna)
+app.use("/api/umang2/predict" , predict);
+
 module.exports = server;

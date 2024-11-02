@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import axios
 import { anxietyQuestions } from '../../../constants';
 import "./styles/AnxietyTest.css";
 import "./styles/button-50.css";
+import api from '../../../api';
 
 function AnxietyTest() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -35,7 +35,7 @@ function AnxietyTest() {
 
     const sendResponsesToBackend = async (ansArr) => {
         try {
-            const response = await axios.post('/api/anxiety-test', { responses: ansArr }); // Update with your backend endpoint
+            const response = await api.post('/api/umang2/predict/anxiety', { input: ansArr }); // Update with your backend endpoint
             setResult(response.data.result); // Assuming the backend sends back a result
         } catch (error) {
             console.error('Error sending data to backend:', error);
